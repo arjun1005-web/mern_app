@@ -1,0 +1,87 @@
+.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.student-card {
+    border: 1px solid #fcfcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(1, 38, 158, 0.1);
+    background-color: #96fc9b;
+    width: 250px;
+    
+}
+.grid-view {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.student-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid #4CAF50;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.student-card h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+}
+
+.student-card p {
+    margin: 12px 0;
+    color: #34495e;
+    line-height: 1.4;
+}
+
+.student-card p strong {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.student-card:nth-child(3n+1) {
+    border-top-color: #2196F3;
+}
+
+.student-card:nth-child(3n+2) {
+    border-top-color: #FF5722;
+}
+
+.student-card:nth-child(3n+3) {
+    border-top-color: #9C27B0;
+}
+
+.student-card:nth-child(3n+1) h2 {
+    border-bottom-color: #2196F3;
+}
+
+.student-card:nth-child(3n+2) h2 {
+    border-bottom-color: #FF5722;
+}
+
+.student-card:nth-child(3n+3) h2 {
+    border-bottom-color: #9C27B0;
+}
